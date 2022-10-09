@@ -23,7 +23,6 @@ html {
     font-size: 20px;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    scrollbar-arrow-color: aqua;
 
 
 }
@@ -193,16 +192,18 @@ html {
     width: 100vw;
     position: absolute;
     z-index: -1;
-    /* opacity: 0.9; */
+    opacity: 0.99;
     filter: blur(2px);
 }
 
 
 .client-text {
+    padding-top: 1.4rem;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
     font-family: monospace;
+    box-shadow: 1rem 1rem 1rem;
 
     background: -webkit-linear-gradient(rgb(189, 181, 175), rgb(247, 163, 18));
     -webkit-background-clip: text;
@@ -297,7 +298,6 @@ html {
 
     #navbar .myul {
         width: 100%;
-        display: none;
 
     }
 
@@ -306,13 +306,14 @@ html {
     }
 
     .ordering-items {
-        width: 70%;
+        width: 95%;
         margin: auto;
+
     }
 
     .ordering-items p {
         margin: auto;
-        width: 90%;
+        width: 70%;
     }
 
     .client {
