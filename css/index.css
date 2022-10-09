@@ -298,8 +298,11 @@ html {
 
     #navbar .myul {
         width: 100%;
-        display: none;
 
+    }
+
+    .ourServices {
+        margin-bottom: 0rem;
     }
 
     .ordering {
