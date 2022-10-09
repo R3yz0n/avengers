@@ -2,17 +2,37 @@
     margin: 0;
     padding: 0;
 
+
+}
+
+
+#loading {
+    background-image: url('../preloader.gif');
+    background-color: #111;
+    width: 100vw;
+    height: 100vh;
+    z-index: +1;
+    position: fixed;
+    background-repeat: no-repeat;
+
+
+
 }
 
 html {
     font-size: 20px;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-arrow-color: aqua;
+
+
 }
 
 /* Css variable */
 /* :root {
     --navbar-height: 100vw;
 } */
+
 
 #navbar {
     display: flex;
@@ -26,6 +46,8 @@ html {
     z-index: +1;
 
 }
+
+
 
 /* logo div */
 #navbar #logo {
@@ -91,13 +113,17 @@ html {
 }
 
 
+
 .ourServices {
     font-size: 3rem;
     text-align: center;
     width: 100vw;
-    height: 10vh;
-    font-weight: 400;
-    margin-bottom: 3rem;
+    height: 15vh;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    color: black;
+
 }
 
 .ordering {
@@ -149,10 +175,56 @@ html {
     font-weight: bold;
 }
 
+/* backgrond imagge strak industries */
 
 
+.client {
+    position: relative;
+    margin-top: 1rem;
+
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-bg {
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    /* opacity: 0.9; */
+    filter: blur(2px);
+}
 
 
+.client-text {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+
+    background: -webkit-linear-gradient(rgb(189, 181, 175), rgb(247, 163, 18));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.client-imgs {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+
+}
+
+
+.client-imgs img {
+    height: 6rem;
+    width: 9rem;
+    margin: auto;
+
+}
 
 
 
@@ -176,8 +248,8 @@ html {
         width: 90%;
     }
 
-
 }
+
 
 @media(max-width:653px) {
     html {
@@ -185,9 +257,25 @@ html {
     }
 
 
+
+
+
+
+    .ourServices {
+        height: 8vh;
+    }
+
     .ordering-item3 p {
         width: 50%;
         margin: auto;
+    }
+
+    .client-text {
+        font-size: 2.3rem;
+    }
+
+    .client-imgs img {
+        padding: 1rem;
     }
 }
 
@@ -196,18 +284,41 @@ html {
         font-size: 12px;
     }
 
+
+
     #navbar {
         min-height: 7vh;
         position: relative;
         flex-direction: column;
         justify-content: space-around;
+        float: right;
     }
+
 
     #navbar .myul {
         width: 100%;
+        display: none;
+
     }
 
     .ordering {
         flex-direction: column;
     }
+
+    .ordering-items {
+        width: 70%;
+        margin: auto;
+    }
+
+    .ordering-items p {
+        margin: auto;
+        width: 90%;
+    }
+
+    .client {
+        min-height: 20vh;
+
+    }
+
+
 }
