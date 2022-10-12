@@ -432,13 +432,16 @@ i:hover {
     }
 
     .comics {
-        flex-direction: column;
+        min-height: 45vh !important;
+        padding: 0.5rem 1rem;
+    }
+
+    .comic-book3 {
+        /* display: none; */
     }
 
     .each {
-        width: 80%;
-        margin: auto;
-        height: 25%;
+        margin: 0.2rem 0.7rem;
     }
 
 
