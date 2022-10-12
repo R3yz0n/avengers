@@ -234,7 +234,6 @@ html {
 .morecomics {
 
     display: flex;
-    border: 1px solid green;
     font-size: 1.4rem;
     font-weight: bold;
     align-items: center;
