@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            height: 40vh;
+        }
+
+        button {
+            margin: auto;
+            padding: 3rem 8rem;
+            background-color: skyblue;
+            border: none;
+            position: relative;
+        }
+
+        button::before {
+            content: "";
+            width: 3rem;
+            height: 3rem;
+            /* position: absolute; */
+            /* background-color: red; */
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        button:hover::before {
+            left: -8px;
+            width: 105%;
+            height: 110%;
+            top: -5px;
+            border-top: 1rem;
+            border: 3px solid red;
+
+            z-index: -1;
+            transition: all 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button>
+        Click Here
+    </button>
+
+</body>
+
+</html>
