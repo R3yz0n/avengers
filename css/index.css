@@ -15,13 +15,7 @@ html {
 
 }
 
-video {
-    max-height: 100vh;
-    width: 100vw;
-    transform: scale(1.1);
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-}
+
 
 /* Css variable */
 /* :root {
