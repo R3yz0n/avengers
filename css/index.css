@@ -494,6 +494,10 @@ html {
 
     }
 
+    .d-block {
+        height: 30vh;
+    }
+
     .black-txt {
         height: 10vh;
         font-size: 2rem;
