@@ -238,7 +238,7 @@ html {
     font-weight: bold;
     align-items: center;
     background-color: gray;
-    height: 12vh;
+    height: 10vh;
 }
 
 .morecomics span:hover,
@@ -247,7 +247,7 @@ i:hover {
 }
 
 .morecomics i {
-    flex: 0.1;
+    flex: 0.11;
     padding-left: 3rem;
 }
 
@@ -255,12 +255,13 @@ i:hover {
 /* comics part */
 .comics {
     background-color: gray;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
     max-width: 100vw;
-    min-height: 80vh;
-    padding: 2rem 2rem;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin: auto;
+    padding: 1rem 2rem;
 }
 
 .each {
@@ -339,6 +340,15 @@ i:hover {
         width: 90%;
     }
 
+    .morecomics {
+        height: 9vh;
+    }
+
+    .comics {
+        padding: 1rem 1rem;
+        height: 50vh;
+    }
+
 }
 
 
@@ -369,9 +379,23 @@ i:hover {
         padding: 1rem;
     }
 
-    .comic-book4 {
-        display: none;
+
+
+    .comics {
+        height: 80vh;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
+
+    .each img {
+        width: 100%;
+    }
+
+    .each:hover p {
+        background-color: rgb(0, 0, 0, 0.6);
+
+    }
+
 
 
 
@@ -430,18 +454,31 @@ i:hover {
 
     }
 
-    .comics {
-        min-height: 45vh !important;
-        padding: 0.5rem 1rem;
+    .morecomics {
+        padding-top: 1rem;
+        height: 5vh;
+        font-size: 1.3rem;
     }
 
-    .comic-book3 {
-        /* display: none; */
+    .morecomics i {
+        flex: 0.3;
+    }
+
+    .comics {
+        height: 60vh;
+
     }
 
     .each {
-        margin: 0.2rem 0.7rem;
+        padding: 0;
     }
+
+    .each img {
+        margin: auto;
+        border-radius: 0.5rem;
+    }
+
+
 
 
 }
