@@ -376,8 +376,45 @@ html {
 }
 
 
+footer {
+    max-height: 27vh;
+    padding: 1rem 0rem;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 0.9rem;
+}
 
+footer img {
+    height: 4rem;
+    width: 6.5rem;
+}
 
+footer div {
+    color: #999;
+    font-size: 0.75rem;
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+
+}
+
+footer div span {
+    padding: 0.1rem 0.4rem;
+    flex: auto;
+    text-align: center;
+
+}
+
+footer div span:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
 
 
 
@@ -569,6 +606,10 @@ html {
         border-radius: 0.5rem;
     }
 
+
+    footer {
+        height: 18vh;
+    }
 
 
 
